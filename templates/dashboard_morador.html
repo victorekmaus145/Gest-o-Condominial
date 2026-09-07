@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Gestão Condominial</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- ================================
+             MENU LATERAL
+        ================================= -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+
+                <div class="sidebar-logo-icon">
+                    🛡
+                </div>
+
+                <span>Gestão Condominial</span>
+
+            </div>
+
+
+            <nav class="sidebar-menu">
+
+                <a href="#" class="menu-item active">
+                    <span>▦</span>
+                    Dashboard
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span>⊗</span>
+                    Chamados
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span>▣</span>
+                    Reservas
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span>♙</span>
+                    Visitantes
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span>▤</span>
+                    Boletos
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span>▤</span>
+                    Documentos
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span>♧</span>
+                    Notificações
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span>⚑</span>
+                    Reclamações
+                </a>
+
+            </nav>
+
+
+            <div class="sidebar-footer">
+
+                <span>ⓘ</span>
+
+                Suporte da Administradora
+
+            </div>
+
+        </aside>
+
+
+        <!-- ================================
+             CONTEÚDO PRINCIPAL
+        ================================= -->
+
+        <main class="main-content">
+
+
+            <!-- ================================
+                 CABEÇALHO
+            ================================= -->
+
+            <header class="topbar">
+
+                <div class="condominio-info">
+
+                    <span class="location-icon">⌖</span>
+
+                    <strong>
+                        Residencial Parque das Flores
+                    </strong>
+
+                    <span>
+                        • Bloco B, Apto 104
+                    </span>
+
+                </div>
+
+
+               <div class="user-info">
+
+    <button id="theme-button" class="theme-button">
+        ☾
+    </button>
+
+    <div class="notification">
+        ♧
+    </div>
+
+                    <div class="user-text">
+
+                        <strong>
+                            João Silva
+                        </strong>
+
+                        <span>
+                            Morador Proprietário
+                        </span>
+
+                    </div>
+
+                    <div class="user-avatar">
+                        JS
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- ================================
+                 ÁREA DO DASHBOARD
+            ================================= -->
+
+            <section class="dashboard-content">
+
+
+                <div class="welcome">
+
+                    <h1>
+                        Olá, João Silva!
+                    </h1>
+
+                    <p>
+                        Acompanhe as principais novidades,
+                        reservas e taxas do seu condomínio.
+                    </p>
+
+                </div>
+
+
+                <!-- ================================
+                     CARDS
+                ================================= -->
+
+                <div class="cards-grid">
+
+
+                    <div class="info-card">
+
+                        <div class="card-header">
+
+                            <span>
+                                Chamados Abertos
+                            </span>
+
+                            <div class="card-icon">
+                                ⊗
+                            </div>
+
+                        </div>
+
+                        <strong class="card-number">
+                            2
+                        </strong>
+
+                        <span class="card-description">
+                            1 aguardando resposta
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <div class="card-header">
+
+                            <span>
+                                Próxima Reserva
+                            </span>
+
+                            <div class="card-icon">
+                                ▣
+                            </div>
+
+                        </div>
+
+                        <strong class="card-title">
+                            Salão de Festas
+                        </strong>
+
+                        <span class="card-description">
+                            Agendado para 15/09
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <div class="card-header">
+
+                            <span>
+                                Visitantes Agendados
+                            </span>
+
+                            <div class="card-icon">
+                                ♙
+                            </div>
+
+                        </div>
+
+                        <strong class="card-title">
+                            João Carlos
+                        </strong>
+
+                        <span class="card-description">
+                            Previsão: 10/09 • Portaria Central
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-card boleto-card">
+
+                        <div class="card-header">
+
+                            <span>
+                                Boletos Pendentes
+                            </span>
+
+                            <div class="card-icon">
+                                ▤
+                            </div>
+
+                        </div>
+
+                        <strong class="card-number">
+                            R$ 850,00
+                        </strong>
+
+                        <span class="card-description">
+                            Vencimento: 10/09
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- ================================
+                     PARTE INFERIOR
+                ================================= -->
+
+                <div class="dashboard-bottom">
+
+
+                    <!-- COMUNICADOS -->
+
+                    <div class="announcements">
+
+                        <div class="section-header">
+
+                            <h2>
+                                Comunicados Recentes
+                            </h2>
+
+                            <a href="#">
+                                Ver todos
+                            </a>
+
+                        </div>
+
+
+                        <div class="announcement">
+
+                            <strong>
+                                Manutenção Preventiva de Elevadores
+                            </strong>
+
+                            <p>
+                                Quarta-feira, das 09h às 11h,
+                                elevador social bloco B.
+                            </p>
+
+                            <span>
+                                Há 2 horas
+                            </span>
+
+                        </div>
+
+
+                        <div class="announcement">
+
+                            <strong>
+                                Nova Assembleia Geral Ordinária
+                            </strong>
+
+                            <p>
+                                Convocação enviada para o dia
+                                20/09 às 20:00 no Salão de Festas.
+                            </p>
+
+                            <span>
+                                Ontem às 18:30
+                            </span>
+
+                        </div>
+
+
+                        <div class="announcement">
+
+                            <strong>
+                                Correspondência na Portaria
+                            </strong>
+
+                            <p>
+                                Você possui 1 nova encomenda
+                                recebida na portaria central.
+                            </p>
+
+                            <span>
+                                05/09/2025
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ATALHOS -->
+
+                    <div class="quick-actions">
+
+                        <h2>
+                            Atalhos Rápidos
+                        </h2>
+
+
+                        <a href="#" class="quick-action">
+
+                            <div class="quick-icon">
+                                ⊕
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Novo Chamado
+                                </strong>
+
+                                <span>
+                                    Reportar ocorrência
+                                </span>
+
+                            </div>
+
+                            <b>
+                                ›
+                            </b>
+
+                        </a>
+
+
+                        <a href="#" class="quick-action">
+
+                            <div class="quick-icon">
+                                ▣
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Nova Reserva
+                                </strong>
+
+                                <span>
+                                    Salão, churrasqueira
+                                </span>
+
+                            </div>
+
+                            <b>
+                                ›
+                            </b>
+
+                        </a>
+
+
+                        <a href="#" class="quick-action">
+
+                            <div class="quick-icon">
+                                ♙
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Agendar Visitante
+                                </strong>
+
+                                <span>
+                                    Autorizar entrada
+                                </span>
+
+                            </div>
+
+                            <b>
+                                ›
+                            </b>
+
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+    
+<script src="{{ url_for('static', filename='js/theme.js') }}"></script>
+
+</body>
+
+</html>

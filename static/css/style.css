@@ -1,0 +1,1160 @@
+/* ================================
+   CONFIGURAÇÕES GERAIS
+================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #172033;
+}
+
+
+/* ================================
+   PÁGINA DE LOGIN
+================================ */
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #f7faf9,
+        #eef8f7
+    );
+
+    padding: 20px;
+}
+
+
+/* ================================
+   CARD
+================================ */
+
+.login-card {
+    width: 100%;
+    max-width: 395px;
+
+    background-color: #ffffff;
+
+    padding: 38px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 30px rgba(15, 23, 42, 0.08);
+
+    text-align: center;
+}
+
+
+/* ================================
+   LOGO
+================================ */
+
+.logo {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 14px;
+}
+
+.logo-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #e9f8f6;
+
+    border-radius: 12px;
+
+    color: #12877f;
+
+    font-size: 24px;
+}
+
+
+/* ================================
+   TÍTULO
+================================ */
+
+.login-card h1 {
+    font-size: 25px;
+    font-weight: 700;
+
+    margin-bottom: 7px;
+
+    color: #172033;
+}
+
+.subtitle {
+    font-size: 13px;
+    line-height: 20px;
+
+    color: #64748b;
+
+    margin-bottom: 30px;
+}
+
+
+/* ================================
+   FORMULÁRIO
+================================ */
+
+.form-group {
+    text-align: left;
+
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    color: #475569;
+
+    margin-bottom: 7px;
+}
+
+
+/* ================================
+   SENHA + ESQUECI SENHA
+================================ */
+
+.password-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-label label {
+    margin-bottom: 7px;
+}
+
+.forgot-password {
+    font-size: 11px;
+
+    color: #12877f;
+
+    text-decoration: none;
+
+    margin-bottom: 7px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   CAMPOS
+================================ */
+
+.input-container {
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #dbe3ea;
+
+    border-radius: 10px;
+
+    background-color: #ffffff;
+
+    padding: 0 12px;
+
+    transition: border-color 0.2s;
+}
+
+.input-container:focus-within {
+    border-color: #12877f;
+}
+
+.input-icon {
+    font-size: 15px;
+
+    color: #94a3b8;
+
+    margin-right: 9px;
+}
+
+.input-container input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    font-size: 13px;
+
+    color: #172033;
+
+    background: transparent;
+}
+
+.input-container input::placeholder {
+    color: #94a3b8;
+}
+
+.password-icon {
+    font-size: 14px;
+
+    color: #94a3b8;
+
+    margin-left: 8px;
+
+    cursor: pointer;
+}
+
+
+/* ================================
+   BOTÃO
+================================ */
+
+.login-button {
+    width: 100%;
+    height: 40px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #12877f;
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+.login-button:hover {
+    background-color: #0f766e;
+}
+
+
+/* ================================
+   INFORMAÇÃO
+================================ */
+
+.login-info {
+    font-size: 10px;
+    line-height: 16px;
+
+    color: #94a3b8;
+
+    margin-top: 27px;
+}
+
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+
+@media (max-width: 480px) {
+
+    .login-card {
+        padding: 30px 24px;
+    }
+
+    .login-card h1 {
+        font-size: 23px;
+    }
+
+}
+
+/* =====================================================
+   DASHBOARD DO MORADOR
+===================================================== */
+
+.dashboard {
+    min-height: 100vh;
+
+    display: flex;
+
+    background-color: #f7fafc;
+}
+
+
+/* =====================================================
+   MENU LATERAL
+===================================================== */
+
+.sidebar {
+    width: 195px;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #ffffff;
+
+    border-right: 1px solid #e2e8f0;
+}
+
+
+/* LOGO */
+
+.sidebar-logo {
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 18px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    color: #172033;
+}
+
+.sidebar-logo-icon {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #e9f8f6;
+
+    border-radius: 8px;
+
+    color: #12877f;
+
+    font-size: 16px;
+}
+
+
+/* MENU */
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    padding: 15px 10px;
+}
+
+
+.menu-item {
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 12px;
+
+    border-radius: 7px;
+
+    color: #475569;
+
+    text-decoration: none;
+
+    font-size: 12px;
+}
+
+
+.menu-item span {
+    width: 18px;
+
+    text-align: center;
+
+    font-size: 15px;
+}
+
+
+.menu-item:hover {
+    background-color: #f1f8f7;
+
+    color: #12877f;
+}
+
+
+.menu-item.active {
+    background-color: #eaf8f6;
+
+    color: #12877f;
+
+    font-weight: 600;
+}
+
+
+/* RODAPÉ DO MENU */
+
+.sidebar-footer {
+    margin-top: auto;
+
+    padding: 18px;
+
+    border-top: 1px solid #e2e8f0;
+
+    color: #94a3b8;
+
+    font-size: 10px;
+}
+
+.sidebar-footer span {
+    margin-right: 5px;
+}
+
+
+/* =====================================================
+   CONTEÚDO PRINCIPAL
+===================================================== */
+
+.main-content {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+/* =====================================================
+   BARRA SUPERIOR
+===================================================== */
+
+.topbar {
+    height: 72px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 28px;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+/* CONDOMÍNIO */
+
+.condominio-info {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+.condominio-info strong {
+    color: #172033;
+}
+
+.location-icon {
+    color: #12877f;
+
+    font-size: 16px;
+
+    margin-right: 3px;
+}
+
+
+/* USUÁRIO */
+
+.user-info {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.notification {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f8fafc;
+
+    border-radius: 50%;
+
+    font-size: 15px;
+
+    color: #475569;
+}
+
+
+.user-text {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 2px;
+}
+
+
+.user-text strong {
+    font-size: 11px;
+
+    color: #172033;
+}
+
+
+.user-text span {
+    font-size: 9px;
+
+    color: #94a3b8;
+}
+
+
+.user-avatar {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #12877f;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   CONTEÚDO DO DASHBOARD
+===================================================== */
+
+.dashboard-content {
+    padding: 30px;
+}
+
+
+/* BOAS-VINDAS */
+
+.welcome {
+    margin-bottom: 24px;
+}
+
+.welcome h1 {
+    font-size: 24px;
+
+    color: #172033;
+
+    margin-bottom: 5px;
+}
+
+.welcome p {
+    font-size: 12px;
+
+    color: #64748b;
+}
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.cards-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+
+.info-card {
+    min-height: 125px;
+
+    padding: 18px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 12px rgba(15, 23, 42, 0.04);
+}
+
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 12px;
+
+    font-size: 10px;
+
+    color: #64748b;
+}
+
+
+.card-icon {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #eaf8f6;
+
+    color: #12877f;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+}
+
+
+.card-number {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 23px;
+
+    color: #172033;
+}
+
+
+.card-title {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 14px;
+
+    color: #172033;
+}
+
+
+.card-description {
+    display: block;
+
+    font-size: 9px;
+
+    color: #94a3b8;
+}
+
+
+/* BOLETO */
+
+.boleto-card .card-icon {
+    background-color: #fff1f2;
+
+    color: #ef4444;
+}
+
+.boleto-card .card-number {
+    color: #ef4444;
+}
+
+.boleto-card .card-description {
+    color: #ef4444;
+}
+
+
+/* =====================================================
+   PARTE INFERIOR
+===================================================== */
+
+.dashboard-bottom {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 18px;
+}
+
+
+/* =====================================================
+   COMUNICADOS
+===================================================== */
+
+.announcements {
+    background-color: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+    box-shadow:
+        0 3px 12px rgba(15, 23, 42, 0.04);
+}
+
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+
+.section-header h2,
+.quick-actions h2 {
+    font-size: 14px;
+
+    color: #172033;
+}
+
+
+.section-header a {
+    font-size: 10px;
+
+    color: #12877f;
+
+    text-decoration: none;
+}
+
+
+.announcement {
+    padding: 13px 0;
+
+    border-bottom: 1px solid #eef2f6;
+}
+
+
+.announcement:last-child {
+    border-bottom: none;
+}
+
+
+.announcement strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 11px;
+
+    color: #172033;
+}
+
+
+.announcement p {
+    margin-bottom: 4px;
+
+    font-size: 9px;
+
+    line-height: 15px;
+
+    color: #64748b;
+}
+
+
+.announcement span {
+    font-size: 8px;
+
+    color: #94a3b8;
+}
+
+
+/* =====================================================
+   ATALHOS RÁPIDOS
+===================================================== */
+
+.quick-actions {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.quick-actions h2 {
+    margin-bottom: 2px;
+}
+
+
+.quick-action {
+    min-height: 55px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 3px 10px rgba(15, 23, 42, 0.03);
+}
+
+
+.quick-icon {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #eaf8f6;
+
+    color: #12877f;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+}
+
+
+.quick-action div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+
+    flex: 1;
+}
+
+
+.quick-action strong {
+    font-size: 10px;
+
+    color: #172033;
+}
+
+
+.quick-action span {
+    font-size: 8px;
+
+    color: #94a3b8;
+}
+
+
+.quick-action b {
+    color: #94a3b8;
+
+    font-size: 16px;
+}
+
+
+.quick-action:hover {
+    border-color: #b8e5df;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        width: 170px;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-bottom {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .topbar {
+        padding: 0 15px;
+    }
+
+    .condominio-info {
+        display: none;
+    }
+
+    .dashboard-content {
+        padding: 20px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================
+   TEMA ESCURO - DASHBOARD
+========================================= */
+
+body.dark-theme {
+    background-color: #111827;
+    color: #e5e7eb;
+}
+
+/* =========================================
+   ESTRUTURA PRINCIPAL
+========================================= */
+
+body.dark-theme .dashboard {
+    background-color: #111827;
+}
+
+body.dark-theme .main-content {
+    background-color: #111827;
+}
+
+/* =========================================
+   MENU LATERAL
+========================================= */
+
+body.dark-theme .sidebar {
+    background-color: #1f2937;
+    border-color: #374151;
+}
+
+body.dark-theme .sidebar-logo span {
+    color: #f9fafb;
+}
+
+body.dark-theme .sidebar-menu .menu-item {
+    color: #cbd5e1;
+}
+
+body.dark-theme .sidebar-menu .menu-item:hover {
+    background-color: #374151;
+}
+
+body.dark-theme .sidebar-menu .menu-item.active {
+    background-color: #134e4a;
+    color: #5eead4;
+}
+
+body.dark-theme .sidebar-footer {
+    color: #9ca3af;
+    border-color: #374151;
+}
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+body.dark-theme .topbar {
+    background-color: #1f2937;
+    border-color: #374151;
+}
+
+body.dark-theme .condominio-info {
+    color: #cbd5e1;
+}
+
+body.dark-theme .condominio-info strong {
+    color: #f9fafb;
+}
+
+body.dark-theme .user-text strong {
+    color: #f9fafb;
+}
+
+body.dark-theme .user-text span {
+    color: #9ca3af;
+}
+
+/* =========================================
+   BOTÃO DO TEMA
+========================================= */
+
+body.dark-theme .theme-button {
+    background-color: #374151;
+    color: #f9fafb;
+    border-color: #4b5563;
+}
+
+body.dark-theme .theme-button:hover {
+    background-color: #4b5563;
+}
+
+/* =========================================
+   ÁREA PRINCIPAL
+========================================= */
+
+body.dark-theme .welcome h1 {
+    color: #f9fafb;
+}
+
+body.dark-theme .welcome p {
+    color: #9ca3af;
+}
+
+/* =========================================
+   CARDS
+========================================= */
+
+body.dark-theme .info-card {
+    background-color: #1f2937;
+    border-color: #374151;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-theme .card-header span {
+    color: #9ca3af;
+}
+
+body.dark-theme .card-number,
+body.dark-theme .card-title {
+    color: #f9fafb;
+}
+
+body.dark-theme .card-description {
+    color: #9ca3af;
+}
+
+body.dark-theme .card-icon {
+    background-color: #134e4a;
+    color: #5eead4;
+}
+
+/* =========================================
+   BOLETO
+========================================= */
+
+body.dark-theme .boleto-card .card-number {
+    color: #f87171;
+}
+
+body.dark-theme .boleto-card .card-description {
+    color: #fca5a5;
+}
+
+/* =========================================
+   COMUNICADOS
+========================================= */
+
+body.dark-theme .announcements {
+    background-color: #1f2937;
+    border-color: #374151;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
+}
+
+body.dark-theme .section-header h2 {
+    color: #f9fafb;
+}
+
+body.dark-theme .section-header a {
+    color: #5eead4;
+}
+
+body.dark-theme .announcement {
+    border-color: #374151;
+}
+
+body.dark-theme .announcement strong {
+    color: #f9fafb;
+}
+
+body.dark-theme .announcement p {
+    color: #9ca3af;
+}
+
+body.dark-theme .announcement span {
+    color: #6b7280;
+}
+
+/* =========================================
+   ATALHOS RÁPIDOS
+========================================= */
+
+body.dark-theme .quick-actions h2 {
+    color: #f9fafb;
+}
+
+body.dark-theme .quick-action {
+    background-color: #1f2937;
+    border-color: #374151;
+    color: #e5e7eb;
+}
+
+body.dark-theme .quick-action:hover {
+    background-color: #263449;
+}
+
+body.dark-theme .quick-action strong {
+    color: #f9fafb;
+}
+
+body.dark-theme .quick-action span {
+    color: #9ca3af;
+}
+
+body.dark-theme .quick-action b {
+    color: #9ca3af;
+}
+
+body.dark-theme .quick-icon {
+    background-color: #134e4a;
+    color: #5eead4;
+}
+
+/* =========================================
+   LINKS
+========================================= */
+
+body.dark-theme a {
+    color: #5eead4;
+}
+
+/* =========================================
+   AVATAR
+========================================= */
+
+body.dark-theme .user-avatar {
+    background-color: #0f766e;
+    color: #ffffff;
+}
